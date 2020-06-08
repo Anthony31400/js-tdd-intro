@@ -1,18 +1,8 @@
 const assert = require('assert');
 
 function capitalizeFirstLetters(input) {
-    let output = ''
-    for (i=0; i<input.length; i++) {
-        if(i===0) {
-            output +=input[0].toUpperCase();
-        } else if (input[i] === ' ') {
-            output += ' '+input[i+1].toUpperCase();
-            i+=1
-        } else {
-            output += input[i];
-        }
-    }
-    return output;    
+        return input.length > 0 ? input.split(' ').map(word => word[0].toUpperCase()+ word.slice(1)).join(' ') : ''; 
+    
 }
 
   
