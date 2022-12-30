@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/Anthony31400/js-tdd-intro#readme",
   "devDependencies": {
-    "mocha": "^7.2.0"
+    "mocha": "^10.2.0"
   }
 }
